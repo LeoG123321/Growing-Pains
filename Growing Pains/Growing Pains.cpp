@@ -5,10 +5,12 @@
 */
 
 #include <iostream>
+#include "DynamicArray.h"
 
 using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    DynamicArray array;
+
 }
