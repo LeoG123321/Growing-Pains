@@ -27,6 +27,5 @@ int DynamicArray::size() {
 	return top + 1;
 }
 void DynamicArray::reset() {
-	delete[] array;
 	top = -1;
 }
