@@ -1,11 +1,14 @@
-class DynamicArray
+#pragma once
+class ArithmeticDynamicArray
 {
 private:
 	int top;
-	int *array = new int[0];
+	int resize_number;
+	int* array = new int[0];
 	int* resize();
+	int array_size;
 public:
-	DynamicArray();
+	ArithmeticDynamicArray(int resize_number);
 	void append_element(int element);
 	int get_element_at_index(int index);
 	int size();

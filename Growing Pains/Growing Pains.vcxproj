@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArithmeticDynamicArray.cpp" />
     <ClCompile Include="DynamicArray.cpp" />
     <ClCompile Include="Growing Pains.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArithmeticDynamicArray.h" />
     <ClInclude Include="DynamicArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

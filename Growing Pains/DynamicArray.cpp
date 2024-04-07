@@ -1,4 +1,3 @@
-#include <iostream>
 #include "DynamicArray.h"
 
 int* DynamicArray::resize() {
@@ -26,4 +25,7 @@ int DynamicArray::size() {
 }
 void DynamicArray::reset() {
 	top = -1;
+	int* tempArray = new int[0];
+	delete[] array;
+	array = tempArray;
 }
