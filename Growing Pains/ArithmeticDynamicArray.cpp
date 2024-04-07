@@ -1,6 +1,4 @@
-#include <iostream>
 #include "ArithmeticDynamicArray.h"
-using namespace std;
 
 int* ArithmeticDynamicArray::resize() {
 	if (size() == array_size) {

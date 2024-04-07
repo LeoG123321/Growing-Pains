@@ -8,6 +8,7 @@
 #include <cassert>
 #include "DynamicArray.h"
 #include "ArithmeticDynamicArray.h"
+#include "GeometricDynamicArray.h"
 
 using namespace std;
 
@@ -39,6 +40,7 @@ int main()
 
     dynamic_array.reset();
 
+    
     ArithmeticDynamicArray arithmetic_array(4);
 
     cout << "Testing Arithmetic Array..." << endl;
@@ -51,22 +53,11 @@ int main()
     assert(arithmetic_array.get_element_at_index(1) == 5);
 
     arithmetic_array.append_element(4);
-
-
     arithmetic_array.append_element(5);
-
-
     arithmetic_array.append_element(5);
-
-
     arithmetic_array.append_element(5);
-
-
     arithmetic_array.append_element(5);
-
-
     arithmetic_array.append_element(5);
-
 
     assert(arithmetic_array.size() == 8);
 
@@ -85,6 +76,47 @@ int main()
     assert(arithmetic_array.size() == 2);
     assert(arithmetic_array.get_element_at_index(1) == 1);
 
+    arithmetic_array.reset();
+
+    cout << "Testing Geometric Array..." << endl;
+
+    GeometricDynamicArray geometric_array;
+
+    geometric_array.append_element(10);
+    assert(geometric_array.size() == 1);
+    assert(geometric_array.get_element_at_index(0) == 10);
+
+    geometric_array.append_element(5);
+    assert(geometric_array.size() == 2);
+    assert(geometric_array.get_element_at_index(1) == 5);
+
+    geometric_array.append_element(4);
+    assert(geometric_array.size() == 3);
+
+    geometric_array.append_element(5);
+    geometric_array.append_element(5);
+    geometric_array.append_element(5);
+    geometric_array.append_element(5);
+    geometric_array.append_element(5);
+
+    assert(geometric_array.size() == 8);
+
+    geometric_array.append_element(5);
+    geometric_array.append_element(5);
+    geometric_array.append_element(5);
+
+    geometric_array.reset();
+    assert(geometric_array.size() == 0);
+
+    geometric_array.append_element(0);
+    assert(geometric_array.size() == 1);
+    assert(geometric_array.get_element_at_index(0) == 0);
+
+    geometric_array.append_element(1);
+    assert(geometric_array.size() == 2);
+    assert(geometric_array.get_element_at_index(1) == 1);
+
+    geometric_array.reset();
 
     cout << "Testing Complete." << endl;
 }

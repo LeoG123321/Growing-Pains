@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClCompile Include="ArithmeticDynamicArray.cpp" />
     <ClCompile Include="DynamicArray.cpp" />
+    <ClCompile Include="GeometricDynamicArray.cpp" />
     <ClCompile Include="Growing Pains.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArithmeticDynamicArray.h" />
     <ClInclude Include="DynamicArray.h" />
+    <ClInclude Include="GeometricDynamicArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
