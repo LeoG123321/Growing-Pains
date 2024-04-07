@@ -37,10 +37,11 @@ int main()
     assert(dynamic_array.size() == 2);
     assert(dynamic_array.get_element_at_index(1) == 1);
 
+    dynamic_array.reset();
 
     ArithmeticDynamicArray arithmetic_array(4);
 
-    cout << "Begin Testing..." << endl;
+    cout << "Testing Arithmetic Array..." << endl;
     arithmetic_array.append_element(10);
     assert(arithmetic_array.size() == 1);
     assert(arithmetic_array.get_element_at_index(0) == 10);
@@ -48,6 +49,30 @@ int main()
     arithmetic_array.append_element(5);
     assert(arithmetic_array.size() == 2);
     assert(arithmetic_array.get_element_at_index(1) == 5);
+
+    arithmetic_array.append_element(4);
+
+
+    arithmetic_array.append_element(5);
+
+
+    arithmetic_array.append_element(5);
+
+
+    arithmetic_array.append_element(5);
+
+
+    arithmetic_array.append_element(5);
+
+
+    arithmetic_array.append_element(5);
+
+
+    assert(arithmetic_array.size() == 8);
+
+    arithmetic_array.append_element(5);
+    arithmetic_array.append_element(5);
+    arithmetic_array.append_element(5);
 
     arithmetic_array.reset();
     assert(arithmetic_array.size() == 0);
